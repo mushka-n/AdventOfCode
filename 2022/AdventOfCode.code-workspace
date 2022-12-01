@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "name": "🌎 root",
+      "path": "./"
+    }
+  ],
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Start Deno",
+        "type": "shell",
+        "command": "deno run --watch --allow-read task-${input:taskNum}.js",
+        "problemMatcher": []
+      }
+    ],
+    "inputs": [
+      {
+        "id": "taskNum",
+        "description": "Task Number:",
+        "default": "1",
+        "type": "promptString"
+      }
+    ]
+  }
+}
