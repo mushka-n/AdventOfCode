@@ -11,7 +11,7 @@
       {
         "label": "Start Deno",
         "type": "shell",
-        "command": "deno run --watch --allow-read task-${input:taskNum}.js",
+        "command": "deno run --watch --allow-read task-${input:taskNum}.ts",
         "problemMatcher": []
       }
     ],
@@ -23,5 +23,9 @@
         "type": "promptString"
       }
     ]
+  },
+  "settings": {
+    "deno.enable": true,
+    "deno.unstable": false
   }
 }

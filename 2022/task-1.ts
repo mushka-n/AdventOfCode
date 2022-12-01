@@ -1,6 +1,6 @@
-import getData from "./getData.ts";
+import { getElves } from "./getData.ts";
 
-const elves = await getData();
+const elves = await getElves();
 let maxCalories = -1;
 
 elves.forEach((elf) => {
@@ -8,4 +8,3 @@ elves.forEach((elf) => {
 });
 
 console.log(maxCalories);
-  

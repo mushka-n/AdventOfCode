@@ -1,7 +1,7 @@
-import getData from "./getData.ts";
+import { getElves } from "./getData.ts";
 
-const elves = await getData();
-let topThreeCalories = [-1, -1, -1];
+const elves = await getElves();
+const topThreeCalories = [-1, -1, -1];
 
 elves.forEach((elf) => {
   if (elf.calories > topThreeCalories[0]) {
