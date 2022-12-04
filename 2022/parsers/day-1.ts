@@ -4,8 +4,8 @@ export type Elf = {
   calories: number;
 };
 
-const getElves = async (): Promise<Elf[]> => {
-  let input = await Deno.readTextFile("./input.txt");
+export const getElves = async (): Promise<Elf[]> => {
+  let input = await Deno.readTextFile("data/day-1.txt");
   input = input.replace(/(\r)/gm, "");
 
   return input.split("\n\n").map((elf, i) => {
@@ -19,5 +19,3 @@ const getElves = async (): Promise<Elf[]> => {
     };
   });
 };
-
-export { getElves };

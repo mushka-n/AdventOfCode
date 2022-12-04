@@ -1,4 +1,4 @@
-import { getElves } from "./getData.ts";
+import { getElves } from "./parsers/day-1.ts";
 
 const elves = await getElves();
 const topThreeCalories = [-1, -1, -1];
